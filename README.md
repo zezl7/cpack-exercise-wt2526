@@ -5,6 +5,7 @@ Repository for the [CPack exercise](https://github.com/Simulation-Software-Engin
 ## Buildind the package
 
 ```bash
+mkdir build && cd build
 cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Release ..
 make -j && make install
 cpack -G "TGZ;DEB"
