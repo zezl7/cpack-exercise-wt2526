@@ -16,3 +16,10 @@ cpack -G "TGZ;DEB"
 ```bash
 apt install ./cpackexample_0.1.0_amd64.deb
 ```
+
+## Unpacking the package and running the binary
+
+```bash
+dpkg-deb -R cpackexample_0.1.0_amd64.deb /cpackexample-debian
+cd /cpackexample-debian/usr/bin && ./cpackexample
+```
